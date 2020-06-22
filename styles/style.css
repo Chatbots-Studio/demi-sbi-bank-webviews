@@ -481,7 +481,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #d3dff5;
+  background: #fff;
   font-size: 1.6rem; }
   .main .form-wrapper {
     width: 100%;
