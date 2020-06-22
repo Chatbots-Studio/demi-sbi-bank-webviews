@@ -1,0 +1,62 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+i,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+footer,
+header,
+menu,
+nav,
+section {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+body {
+  width: 100%;
+  font-size: 1.6rem;
+}
+span,
+div,
+input,
+label,
+section {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+label,
+input[type="radio"] {
+  cursor: pointer;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+a:focus {
+  outline: none;
+}

@@ -1,0 +1,113 @@
+@import "normalize";
+@import "global";
+
+.bold {
+  font-weight: 700;
+}
+/*Custom styles*/
+.main {
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background: #d3dff5;
+  font-size: 1.6rem;
+  .form {
+    &-wrapper {
+      width: 100%;
+      max-width: 50rem;
+      padding: 2rem 1rem;
+      border: 1px solid #709bea;
+    }
+    &-item {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      &__name {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+  .column {
+    &-left {
+      width: 10rem;
+      padding: 0 1rem;
+      flex-shrink: 0;
+    }
+    &-right {
+      width: calc(100% - 10rem);
+      padding: 0 1rem;
+      flex-grow: 0;
+    }
+  }
+  .input {
+    &-wrapper {
+      max-width: 100%;
+      margin: 1rem 0;
+    }
+    &-field {
+      height: 3rem;
+      width: 100%;
+      max-width: 20rem;
+      padding: 0 1rem;
+    }
+  }
+  .select-item {
+    height: 3rem;
+    max-height: 6.5rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .button {
+    &-primary{
+      min-width: 9rem;
+      max-width: 12rem;
+      height: 4.4rem;
+      padding: 0 1.5rem;
+      margin: auto;
+      display: block;
+      font-size: 1.6rem;
+      line-height: 4.4rem;
+      font-weight: 500;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      background: #709bea;
+      border-radius: 0.3rem;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: #415986;
+      }
+    }
+    &-secondary {
+      min-width: 9rem;
+      max-width: 12rem;
+      height: 4.4rem;
+      padding: 0 1.5rem;
+      margin: auto;
+      display: block;
+      font-size: 1.6rem;
+      line-height: 4rem;
+      font-weight: 500;
+      text-align: center;
+      color: #709bea;
+      text-decoration: none;
+      background: #fff;
+      border-radius: 0.3rem;
+      border: 0.2rem solid #709bea;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: #dfe6f3;
+      }
+    }
+    &-wrapper {
+      width: 100%;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
