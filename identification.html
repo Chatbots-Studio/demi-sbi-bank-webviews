@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Идентификация</title>
+</head>
+<body>
+<section class="main identification">
+    <p class="identification-top-text">Можем предложить Вам два способа прохождения идентификации: упрощенная идентификация, либо полная идентификация через ЕПГУ, которая ускорит выдачу физической карты. Выберите, пожалуйста, опцию</p>
+    
+    <div class="identification-tabs">
+        <div id="tab-1" class="identification-tab active">ЕПГУ</div>
+        <div id="tab-2" class="identification-tab">Упрощенная идентификация</div>
+    </div>
+    <div id="content-1" class="form-wrapper identification-content-1">
+        <div class="identification-border">
+            <p class="identification-text-color">Если у Вас есть подтвержденная учетная запись на ЕПГУ, то Вы можете пройти идентификацию через ЕПГУ</p>
+            <div class="input-wrapper">
+                <input id="verified" class="input-radio" type="radio" name="account">
+                <label class="label" for="verified">есть подтвержденная УЗ на ЕПГУ</label>
+            </div>
+            <div class="input-wrapper">
+                <input id="unverified" class="input-radio" type="radio" name="account">
+                <label class="label" for="unverified">есть не подтвержденная УЗ на ЕПГУ</label>
+            </div>
+            <div class="input-wrapper">
+                <input id="no-account" class="input-radio" type="radio" name="account">
+                <label class="label" for="no-account">нет записи, хочу оформить</label>
+            </div>
+        </div>
+        
+        <p>Данная опция предполагает, что Вы соглашаетесь на обработку личных данных через ресурс ЕПГУ</p>
+
+        <div class="input-wrapper">
+            <input id="agree" class="input-radio" type="checkbox">
+            <label class="label" for="agree">согласен на обработку своих данных через ЕПГУ <a href="images/Согласие_Поручение_клиента_на_обработку_персональных_данных.pdf" target="_blank">детально</a></label>
+        </div>
+
+        <div class="input-wrapper identification-margin">
+            <select class="select-item" name="document" id="document">
+                <option value disabled selected>тип документа</option>
+                <option value="doc2">документ 1</option>
+                <option value="doc3">документ 2</option>
+                <option value="doc4">документ 3</option>
+            </select>
+        </div>
+
+        <div class="download-file">
+            <label for="file-upload" class="button-secondary identification-button">Прикрепить скан</label>
+            <input id="file-upload" type="file" accept="image/*" capture="camera" />
+        </div>
+
+        <div class="identification-button-wrapper">
+            <a href="#" class="button-primary identification-button">Ввести в ручном режиме</a>
+        </div>
+
+        <div class="button-wrapper">
+            <a href="https://m.me/103229161431509?ref=5" class="button-secondary">Отправить</a>
+        </div>
+    </div>
+
+    <div id="content-2" class="form-wrapper identification-content-2">
+        <div class="form-item">
+            <div class="column-left">
+                <label>Тип документа</label>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <select class="select-item" name="document" id="document">
+                        <option value disabled selected>тип документа</option>
+                        <option value="doc2">документ 1</option>
+                        <option value="doc3">документ 2</option>
+                        <option value="doc4">документ 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <div class="column-left">
+                <label>Серия документа</label>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <input class="input-field" type="text" placeholder="серия документа">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <div class="column-left">
+                <label>ФИО</label>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <input class="input-field" type="text" placeholder="ФИО">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <div class="column-left">
+                <label>СНИЛС</label>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <select class="select-item" name="document" id="document">
+                        <option value disabled selected>СНИЛС/ИНН/ОМ    С</option>
+                        <option value="doc2">документ 1</option>
+                        <option value="doc3">документ 2</option>
+                        <option value="doc4">документ 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <div class="column-left">
+                <label>Серия документа</label>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <input class="input-field" type="text" placeholder="серия документа">
+                </div>
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <a href="https://m.me/103229161431509?ref=6" class="button-secondary">Отправить</a>
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <a href="#" class="button-primary identification-button-primary">Нет, спасибо</a>
+    </div>
+</section>
+    
+<script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+<script src="scripts/tabs.js" type="text/javascript"></script>
+</body>
+</html>

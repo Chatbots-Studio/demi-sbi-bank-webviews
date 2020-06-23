@@ -517,12 +517,17 @@ a:focus {
   .main .input-wrapper {
     max-width: 100%;
     margin: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     text-align: left; }
   .main .input-field {
     height: 3rem;
     width: 100%;
     max-width: 20rem;
     padding: 0 1rem; }
+  .main .input-radio {
+    margin-top: 0.5rem; }
   .main .select-item {
     height: 3rem;
     max-height: 6.5rem;
@@ -599,3 +604,76 @@ a:focus {
     left: 100%; }
   .main .label {
     margin-left: 1.5rem; }
+
+.identification {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .identification-top-text {
+    width: 100%;
+    max-width: 50rem;
+    padding: 2rem 0; }
+  .identification-tabs {
+    width: 100%;
+    max-width: 50rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .identification-tab {
+    position: relative;
+    z-index: 2;
+    width: 48%;
+    padding: 0.5rem 1rem;
+    margin-bottom: -0.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    border: 0.1rem solid #709bea;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    background: #e2e8f5;
+    cursor: pointer; }
+    .identification-tab.active {
+      border-bottom: 0.1rem solid #fff;
+      background: #fff; }
+  .identification-content-2 {
+    display: none; }
+  .identification-border {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid #c1c1c1; }
+  .identification-text-color {
+    font-weight: 700;
+    color: #709bea; }
+  .identification .identification-margin {
+    margin: 3rem 0 1.5rem; }
+  .identification .identification-button {
+    max-width: 23rem;
+    margin-left: 0; }
+  .identification .identification-button-wrapper {
+    padding: 2.5rem 0; }
+  .identification .identification-button-primary {
+    max-width: 17rem; }
+  .identification .column-left {
+    padding: 0; }
+  .identification .select-item {
+    width: 100%;
+    max-width: 20rem;
+    margin: 0; }
