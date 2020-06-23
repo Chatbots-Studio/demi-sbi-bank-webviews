@@ -448,6 +448,8 @@ body {
   font-size: 1.6rem; }
 
 span,
+p,
+a,
 div,
 input,
 label,
@@ -514,7 +516,8 @@ a:focus {
             flex-grow: 0; }
   .main .input-wrapper {
     max-width: 100%;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    text-align: left; }
   .main .input-field {
     height: 3rem;
     width: 100%;
@@ -570,3 +573,27 @@ a:focus {
     width: 100%;
     padding: 2rem 1rem;
     margin-bottom: 2rem; }
+  .main .download-form-wrapper {
+    width: 100%;
+    max-width: 50rem;
+    padding: 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .main .download-form-wrapper .button-secondary {
+      max-width: 18rem; }
+  .main .download-sertify-message {
+    text-align: center;
+    display: none; }
+    .main .download-sertify-message-margin {
+      margin-bottom: 2.5rem; }
+  .main input[type="file"] {
+    position: fixed;
+    top: 100%;
+    left: 100%; }

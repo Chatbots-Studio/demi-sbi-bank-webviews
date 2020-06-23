@@ -46,6 +46,7 @@
     &-wrapper {
       max-width: 100%;
       margin: 1rem 0;
+      text-align: left;
     }
     &-field {
       height: 3rem;
@@ -63,7 +64,7 @@
     cursor: pointer;
   }
   .button {
-    &-primary{
+    &-primary {
       min-width: 9rem;
       max-width: 12rem;
       height: 4.4rem;
@@ -109,5 +110,30 @@
       padding: 2rem 1rem;
       margin-bottom: 2rem;
     }
+  }
+  .download {
+    &-form-wrapper {
+      width: 100%;
+      max-width: 50rem;
+      padding: 2rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .button-secondary {
+        max-width: 18rem;
+      }
+    }
+    &-sertify-message {
+      text-align: center;
+      display: none;
+      &-margin {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+  input[type="file"] {
+    position: fixed;
+    top: 100%;
+    left: 100%;
   }
 }
