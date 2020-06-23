@@ -597,3 +597,5 @@ a:focus {
     position: fixed;
     top: 100%;
     left: 100%; }
+  .main .label {
+    margin-left: 1.5rem; }
