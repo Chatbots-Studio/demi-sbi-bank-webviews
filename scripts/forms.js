@@ -18,6 +18,15 @@ function fillSelect(select, options) {
         }))
     })
 }
+function setDate (pageId, date, month, year) {
+    $(pageId).find($('#date')).val(date);
+    $(pageId).find($('#month')).val(month);
+    $(pageId).find($('#year')).val(year);
+}
 fillSelect(selectDate, date);
 fillSelect(selectMontn, month);
 fillSelect(selectYear, year);
+setDate('#birth-sertify', '22', 'апрель', '1977');
+setDate('#manual', '22', 'апрель', '1977');
+setDate('#child-14', '6', 'март', '2000');
+

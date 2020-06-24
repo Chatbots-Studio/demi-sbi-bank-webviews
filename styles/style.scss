@@ -47,6 +47,7 @@
       max-width: 100%;
       margin: 1rem 0;
       display: flex;
+      flex-wrap: wrap;
       text-align: left;
     }
     &-field {
@@ -54,6 +55,9 @@
       width: 100%;
       max-width: 20rem;
       padding: 0 1rem;
+      &::placeholder {
+        color: #363636;
+      }
     }
     &-radio {
       margin-top: 0.5rem;
@@ -213,5 +217,17 @@
     width: 100%;
     max-width: 20rem;
     margin: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main {
+    .label {
+      max-width: 13rem;
+    }
+    &.identification {
+      .label {
+        max-width: 20rem;
+      }
+    }
   }
 }
