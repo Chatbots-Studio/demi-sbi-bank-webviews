@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Дата рождения ребенка</title>
+</head>
+<body>
+<section id="birth-date" class="main birth-date">
+    <div class="form-wrapper">
+        <div class="form-item">
+            <div class="form-description">
+                <span>Введите дату рождения ребенка</span>
+            </div>
+            <div class="input-wrapper">
+                <select class="select-item" name="date" id="date"></select>
+                <select class="select-item" name="month" id="month"></select>
+                <select class="select-item" name="year" id="birth-year"></select>
+            </div>
+            <div class="form-error">
+                <span class = "form-error__text">Введите корректную дату. Ребёнку должно быть не менее 6 лет на момент заполнения формы</span>
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <button id="save-button" class="button-primary">Сохранить</button>
+
+            <a class="button-secondary" href="https://m.me/103229161431509?ref=12">Назад</a>
+        </div>
+    </div>
+</section>
+    
+<script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+<script src="scripts/forms.js" type="text/javascript"></script>
+</body>
+</html>

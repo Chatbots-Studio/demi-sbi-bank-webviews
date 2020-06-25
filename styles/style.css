@@ -473,6 +473,10 @@ a:focus {
 .bold {
   font-weight: 700; }
 
+.disabled {
+  opacity: 0.5;
+  pointer-events: none; }
+
 /*Custom styles*/
 .main {
   min-height: 100vh;
@@ -491,6 +495,7 @@ a:focus {
     padding: 2rem 1rem;
     border: 1px solid #709bea; }
   .main .form-item {
+    position: relative;
     margin-bottom: 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -503,6 +508,15 @@ a:focus {
     .main .form-item__name {
       width: 100%;
       padding: 1rem; }
+  .main .form-error {
+    position: absolute;
+    left: 0;
+    top: 7rem;
+    display: none;
+    text-align: center; }
+    .main .form-error__text {
+      font-size: 1.2rem;
+      color: red; }
   .main .column-left {
     width: 10rem;
     padding: 0 1rem;
@@ -560,6 +574,8 @@ a:focus {
     text-decoration: none;
     background: #709bea;
     border-radius: 0.3rem;
+    border: none;
+    outline: none;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
     .main .button-primary:hover {
@@ -614,6 +630,31 @@ a:focus {
     left: 100%; }
   .main .label {
     margin-left: 1.5rem; }
+  .main.rates {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main.rates .form-wrapper {
+      padding: 2rem; }
+    .main.rates .button-primary {
+      max-width: 13rem; }
+    .main.rates .button-wrapper {
+      margin-bottom: 0; }
+  .main.birth-date {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main.birth-date .form-item {
+      margin-bottom: 3rem;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .main.birth-date .form-description {
+      width: 100%;
+      text-align: center; }
+    .main.birth-date .button-primary {
+      width: 12rem;
+      margin-bottom: 2.5rem; }
 
 .identification {
   -webkit-box-orient: vertical;
@@ -693,3 +734,11 @@ a:focus {
     max-width: 13rem; }
   .main.identification .label {
     max-width: 20rem; } }
+@media screen and (max-width: 350px) {
+  .main.birth-date .input-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .main .form-error {
+    top: 15rem; } }

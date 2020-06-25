@@ -4,6 +4,10 @@
 .bold {
   font-weight: 700;
 }
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
 /*Custom styles*/
 .main {
   min-height: 100vh;
@@ -20,6 +24,7 @@
       border: 1px solid #709bea;
     }
     &-item {
+      position: relative;
       margin-bottom: 1.5rem;
       display: flex;
       align-items: center;
@@ -27,6 +32,17 @@
       &__name {
         width: 100%;
         padding: 1rem;
+      }
+    }
+    &-error {
+      position: absolute;
+      left: 0;
+      top: 7rem;
+      display: none;
+      text-align: center;
+      &__text {
+        font-size: 1.2rem;
+        color: red;
       }
     }
   }
@@ -87,6 +103,8 @@
       text-decoration: none;
       background: #709bea;
       border-radius: 0.3rem;
+      border: none;
+      outline: none;
       transition: all 0.3s ease-in-out;
       &:hover {
         background: #415986;
@@ -146,6 +164,37 @@
   }
   .label {
     margin-left: 1.5rem;
+  }
+  &.rates {
+    align-items: center;
+    .form-wrapper {
+      padding: 2rem;
+    }
+    .button {
+      &-primary {
+        max-width: 13rem;
+      }
+      &-wrapper {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.birth-date {
+    align-items: center;
+    .form {
+      &-item {
+        margin-bottom: 3rem;
+        justify-content: center;
+      }
+      &-description {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .button-primary {
+      width: 12rem;
+      margin-bottom: 2.5rem;
+    }
   }
 }
 .identification {
@@ -208,7 +257,7 @@
     padding: 2.5rem 0;
   }
   .identification-button-primary {
-    max-width: 17rem
+    max-width: 17rem;
   }
   .column-left {
     padding: 0;
@@ -219,6 +268,7 @@
     margin: 0;
   }
 }
+
 @media screen and (max-width: 576px) {
   .main {
     .label {
@@ -228,6 +278,18 @@
       .label {
         max-width: 20rem;
       }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .main {
+    &.birth-date {
+      .input-wrapper {
+        flex-direction: column;
+      }
+    }
+    .form-error {
+      top: 15rem;
     }
   }
 }
