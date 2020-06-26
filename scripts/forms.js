@@ -14,7 +14,7 @@ for (var i = 1; i <= 31; i++) {
 for (var i = 1950; i <= ThisYear; i++) { 
     year.push(i);
 }
-for (var i = 1950; i <= ThisYear - 6; i++) {
+for (var i = (ThisYear - 6); i >= (ThisYear - 21); i--) {
     childBirthYear.push(i);
 }
 function fillSelect(select, options) {
