@@ -453,7 +453,10 @@ a,
 div,
 input,
 label,
-section {
+section,
+ul,
+ol,
+li {
   font-size: 1.6rem;
   line-height: 1.5;
   -webkit-box-sizing: border-box;
@@ -640,12 +643,22 @@ a:focus {
       max-width: 13rem; }
     .main.rates .button-wrapper {
       margin-bottom: 0; }
+    .main.rates .rates__ol {
+      counter-reset: item;
+      list-style-type: none; }
+      .main.rates .rates__ol--nested {
+        padding-left: 2rem; }
+    .main.rates .rates__li {
+      display: block; }
+      .main.rates .rates__li::before {
+        counter-increment: item;
+        content: counters(item,".") ". "; }
   .main.birth-date {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
     .main.birth-date .form-item {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
@@ -655,6 +668,9 @@ a:focus {
     .main.birth-date .button-primary {
       width: 12rem;
       margin-bottom: 2.5rem; }
+  .main .birth-sertify__button {
+    margin-top: 2rem;
+    max-width: 18rem; }
 
 .identification {
   -webkit-box-orient: vertical;

@@ -14,7 +14,7 @@ for (var i = 1; i <= 31; i++) {
 for (var i = 1950; i <= ThisYear; i++) { 
     year.push(i);
 }
-for (var i = (ThisYear - 6); i >= (ThisYear - 21); i--) {
+for (var i = (ThisYear - 6); i >= (ThisYear - 18); i--) {
     childBirthYear.push(i);
 }
 function fillSelect(select, options) {
@@ -35,13 +35,13 @@ fillSelect(selectMontn, month);
 fillSelect(selectYear, year);
 fillSelect(selectBirthYear, childBirthYear);
 
-setDate('#birth-sertify', '22', 'апрель', '1977');
-setDate('#manual', '22', 'апрель', '1977');
-setDate('#child-14', '6', 'март', '2000');
+setDate('#birth-sertify-filled', '22', 'апрель', '1977');
+setDate('#manual-filled', '22', 'апрель', '1977');
 
 function checkDate() {
-    var enteredDateModified = new Date(+selectBirthYear.val()+6, month.indexOf(selectMontn.val()), selectDate.val());
-    if(enteredDateModified <= ThisDate){
+    var enteredDateMax = new Date(+selectBirthYear.val()+6, month.indexOf(selectMontn.val()), selectDate.val()),
+        enteredDateMin = new Date(+selectBirthYear.val()+18, month.indexOf(selectMontn.val()), selectDate.val());
+    if(enteredDateMax <= ThisDate && enteredDateMin > ThisDate){
         $('#save-button').removeClass('disabled');
         $('.form-error').css('display', 'none');
     }else {

@@ -178,12 +178,26 @@
         margin-bottom: 0;
       }
     }
+    .rates__ol {
+      counter-reset: item;
+      list-style-type: none;
+      &--nested {
+        padding-left: 2rem;
+      }
+    }
+    .rates__li {
+      display: block;
+      &::before {
+        counter-increment: item;
+        content: counters(item, ".") ". ";
+      }
+    }
   }
   &.birth-date {
     align-items: center;
     .form {
       &-item {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         justify-content: center;
       }
       &-description {
@@ -194,6 +208,12 @@
     .button-primary {
       width: 12rem;
       margin-bottom: 2.5rem;
+    }
+  }
+  .birth-sertify {
+    &__button {
+      margin-top: 2rem;
+      max-width: 18rem;
     }
   }
 }

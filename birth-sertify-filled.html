@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Ручной ввод</title>
+    <title>Свидетельство о рождении</title>
 </head>
 <body>
-<section id="manual" class="main">
+<section id="birth-sertify-filled" class="main">
     <div class="form-wrapper">
         <div class="form-item">
             <div class="column-left">
@@ -16,7 +16,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id="male" class="input-radio" type="radio" name="sex">
+                    <input id="male" class="input-radio" type="radio" name="sex" checked>
                     <label class="label" for="male">Мужской</label>
                 </div>
                 <div class="input-wrapper">
@@ -31,7 +31,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field" type="text" placeholder="Андреев">
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field" type="text" placeholder="Андрей">
                 </div>
             </div>
         </div>
@@ -51,7 +51,17 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field" type="text" placeholder="Андреевич">
+                </div>
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="column-left">
+                <label>Телефон</label>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <input class="input-field" type="text" placeholder="+74957556983">
                 </div>
             </div>
         </div>
@@ -61,16 +71,12 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id="passport" class="input-radio" type="radio" name="doc">
+                    <input id="passport" class="input-radio" type="radio" name="doc" checked>
                     <label class="label" for="passport">Паспорт РФ</label>
                 </div>
                 <div class="input-wrapper">
-                    <input id="military" class="input-radio" type="radio" name="doc">
-                    <label class="label" for="military">УЛ в/с РФ</label>
-                </div>
-                <div class="input-wrapper">
-                    <input id="military-ticket" class="input-radio" type="radio" name="doc">
-                    <label class="label" for="military-ticket">Военный билет</label>
+                    <input id="sertify" class="input-radio" type="radio" name="doc">
+                    <label class="label" for="sertify">Свидетельство о рождении</label>
                 </div>
             </div>
         </div>
@@ -81,7 +87,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field" type="text" placeholder="ВМ">
                 </div>
             </div>
             <div class="column-left">
@@ -89,7 +95,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field" type="text" placeholder="1231">
                 </div>
             </div>
         </div>
@@ -105,9 +111,32 @@
                 </div>
             </div>
         </div>
+        <div class="form-item">
+            <div class="form-item__name">
+                <span class="bold">Место рождения</span>
+            </div>
+            <div class="column-left">
+                <label>Страна</label>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <input class="input-field" type="text" placeholder="Россия">
+                </div>
+            </div>
+            <div class="column-left">
+                <label>Город</label>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <input class="input-field" type="text" placeholder="Москва">
+                </div>
+            </div>
+        </div>
 
         <div class="button-wrapper">
-            <a href="https://m.me/103229161431509?ref=7" class="button-secondary">Отправить</a>
+            <a href="https://m.me/103229161431509?ref=11datacorrect" class="button-primary birth-sertify__button">Данные верны</a>
+            
+            <a href="https://m.me/103229161431509?ref=12datainccorect" class="button-primary birth-sertify__button">Данные не верны</a>
         </div>
 
     </div>
