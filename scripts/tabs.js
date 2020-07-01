@@ -15,3 +15,11 @@ $('.identification-tab').click(function(e) {
         }
     }
 })
+$('#button-send').click(function() {
+    url='https://m.me/103229161431509?ref=5';
+    if ($('#agree').is(':checked')) {
+        $(location).attr('href', url+'y');
+    } else {
+        $(location).attr('href', url+'n');
+    }
+})
