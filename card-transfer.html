@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Пополнение карты</title>
+</head>
+<body>
+    <section class="main card-transfer">
+        <div class="download-form-wrapper">
+            <div id='params' class="card-transfer-params">
+                <p class="card-transfer-balance">Текущий баланс: <span id="balance"></span></p>
+
+                <label for="file-upload" class="button-secondary card-transfer-button card-transfer-button-long">Отсканировать данные карты</label>
+                <input id="file-upload" type="file" accept="image/*" capture="camera" />
+
+                <div class="form-item card-transfer-form-wrapper">
+                    <div class="column-left">
+                        <label>Номер карты</label>
+                    </div>
+                    <div class="column-right">
+                        <div class="input-wrapper">
+                            <input class="input-field" type="number">
+                        </div>
+                    </div>
+                    <div class="column-left">
+                        <label>Срок действия</label>
+                    </div>
+                    <div class="column-right">
+                        <div class="input-wrapper">
+                            <input class="input-field" type="text">
+                        </div>
+                    </div>
+                    <div class="column-left">
+                        <label>CVV</label>
+                    </div>
+                    <div class="column-right">
+                        <div class="input-wrapper">
+                            <input class="input-field" type="number">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item card-transfer-form-wrapper">
+                    <div class="column-left">
+                        <label>Сумма</label>
+                    </div>
+                    <div class="column-right">
+                        <div class="input-wrapper">
+                            <input id="transfer-sum" class="input-field" type="number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-wrapper">
+                    <button id="do-transfer" class="button-primary card-transfer-button card-transfer-button-long">Пополнить карту</button>
+
+                    <a href="https://wa.me/14155238886" class="button-primary card-transfer-button card-transfer-button-long">Главное меню</a>
+                </div>
+            </div>
+
+            <div id="transfer-rasult" class="card-transfer-done">
+                <p>Отлично!</p>
+                <p>Ваша карта пополнена на <span id="sum"></span>.</p> 
+                <p class="card-transfer-margin">Ваш актуальный баланс:</p>
+
+                <div class="current-balance">
+                    <p>Текущий баланс: <span id="new-balance"></span></p>
+
+                    <p>Кэшбек: <span id="cashback"></span></p>
+                </div>
+
+                <div class="button-wrapper">
+                    <a href="https://wa.me/14155238886" class="button-primary card-transfer-button card-transfer-button-long">Главное меню</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+<script src="scripts/card.js" type="text/javascript"></script>
+</body>
+</html>

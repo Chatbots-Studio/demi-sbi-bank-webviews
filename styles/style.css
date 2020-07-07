@@ -758,3 +758,28 @@ a:focus {
             flex-direction: column; }
   .main .form-error {
     top: 15rem; } }
+.main.card-transfer .card-transfer-margin {
+  margin-bottom: 3rem; }
+.main.card-transfer .card-transfer-button {
+  margin-bottom: 2rem; }
+  .main.card-transfer .card-transfer-button-long {
+    width: 28rem;
+    max-width: 28rem; }
+.main.card-transfer .card-transfer-balance {
+  text-align: center;
+  margin-bottom: 3.5rem; }
+.main.card-transfer .card-transfer-form-wrapper {
+  padding-top: 1.5rem; }
+  .main.card-transfer .card-transfer-form-wrapper .column-left {
+    width: 30%;
+    padding: 0 0 1rem; }
+  .main.card-transfer .card-transfer-form-wrapper .column-right {
+    width: 70%;
+    padding-right: 0;
+    padding-bottom: 1rem; }
+.main.card-transfer .card-transfer-done {
+  display: none;
+  text-align: center; }
+.main.card-transfer .current-balance {
+  padding: 3rem 1.5rem;
+  background: lightgrey; }
