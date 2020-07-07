@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Реквизиты карты</title>
+</head>
+<body>
+    <section class="main card-props">
+        <div class="download-form-wrapper card-props-container">
+            <div class="card-props-image">
+                <img src="https://bizconcept.biz/wp-content/uploads/2017/11/Bankovskaya-karta-Visa.png" alt="card">
+            </div>
+            <div class="card-props-image card-props-margin">
+                <img src="https://zolotoyvek.ua/media/cmsadvanced/Payment-by-Visa-and-MasterCard/cvv2.png" alt="card">
+            </div>
+
+            <div class="button-wrapper">
+                <button id="sms" class="button-primary card-props-button show-popup">Получить все реквизиты в СМС</button>
+
+                <button id="cvv" class="button-primary card-props-button show-popup">Скопировать CVV</button>
+
+                <button id="number" class="button-primary card-props-button show-popup">Скопировать номер</button>
+
+                <button id="term" class="button-primary card-props-button show-popup">Скопировать срок действия</button>
+            </div>
+            <div class="button-wrapper">
+                <a href="https://wa.me/14155238886" class="button-primary card-props-button">Назад</a>
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <div class="popup">
+                <p id="popup-text" class="popup-text"></p>
+    
+                <button id="ok" class="button-primary">ОК</button>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+<script src="scripts/card-props.js" type="text/javascript"></script>
+</body>
+</html>
