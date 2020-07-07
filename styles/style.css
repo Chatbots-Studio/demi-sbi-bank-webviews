@@ -825,3 +825,30 @@ a:focus {
   .popup-text {
     margin-bottom: 1.5rem;
     text-align: center; }
+
+.wallet-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center; }
+.wallet-subtitle {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  display: block; }
+.wallet-flex-container {
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.wallet-column {
+  width: 40%; }
+.wallet-icon {
+  width: 7rem; }
+.wallet-align-right {
+  text-align: right; }

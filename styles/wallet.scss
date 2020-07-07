@@ -1,0 +1,28 @@
+.wallet {
+  &-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  &-subtitle {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+  }
+  &-flex-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-column {
+    width: 40%;
+  }
+  &-icon {
+    width: 7rem;
+  }
+  &-align-right {
+    text-align: right;
+  }
+}
