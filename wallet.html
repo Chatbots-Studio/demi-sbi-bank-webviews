@@ -10,36 +10,70 @@
 <body>
 <section class="main rates wallet">
     <div class="form-wrapper">
-        <h2 class="wallet-title">Добавление карты в Apple Pay</h2>
-        <span class="wallet-subtitle">Как добавить карту в Apple Pay?</span>
-        <div class="wallet-flex-container">
-            <div class="wallet-column wallet-align-right">
-                <img class="wallet-icon" src="https://mogare.com/wp-content/uploads/2019/03/prilozhenie-apple-wallet.png" alt="wallet">
-            </div>
-            <div class="wallet-column">Откройте приложение Wallet</div>
+        <div class="wallet-tabs">
+            <h2 id="tab-1" class="wallet-tab wallet-title active">Добавление карты в Apple Pay</h2>
+            <h2 id="tab-2" class="wallet-tab wallet-title">Добавление карты в Google Pay</h2>
         </div>
-        <ol class="rates__ol">
-            <li class="rates__li">Нажмите кнопку добавить - "+"</li>
-            <li class="rates__li">Нажмите на кнопку "Продолжить"</li>
-            <li class="rates__li">В открывшемся окне "Добавление карты" выберите "Ввести вручную"</li>
-            <li class="rates__li">В открывшемся окне "Детали Карты" заполните поля
-                <ol class="rates__ol rates__ol--nested wallet__ol--nested">
-                    <li class="rates__li wallet__li">"Наименование" (карты) - произвольным текстом</li>
-                    <li class="rates__li wallet__li">"Номер карты" - вставить номер карты, который был скопирован ранее.</li>
-                </ol>
-            </li>
-            <li class="rates__li">Нажмите на кнопку "Далее"</li>
-            <li class="rates__li">Заполните "Срок действия", "CVV" и нажмите на кнопку "Далее" </li>
-            <li class="rates__li">На экране "Условия и положения" нажмите "Принять"</li>
-            <li class="rates__li">На экране "Проверка карты" нажмите "Далее"</li>
-            <li class="rates__li">Введите код проверки, который пришел вам по СМС</li>
-            <li class="rates__li">Готово! Ваша карта активирована, добавлена в Wallet и готова для работы с Apple Pay</li>
-        </ol>
+        <div id="apple" class="wallet-content-1 wallet-content">
+            <span class="wallet-subtitle">Как добавить карту в Apple Pay?</span>
+            <div class="wallet-flex-container">
+                <div class="wallet-column wallet-align-right">
+                    <img class="wallet-icon" src="https://mogare.com/wp-content/uploads/2019/03/prilozhenie-apple-wallet.png" alt="wallet">
+                </div>
+                <div class="wallet-column">Откройте приложение Wallet</div>
+            </div>
+            <ol class="rates__ol">
+                <li class="rates__li">Нажмите кнопку добавить - "+"</li>
+                <li class="rates__li">Нажмите на кнопку "Продолжить"</li>
+                <li class="rates__li">В открывшемся окне "Добавление карты" выберите "Ввести вручную"</li>
+                <li class="rates__li">В открывшемся окне "Детали Карты" заполните поля
+                    <ol class="rates__ol rates__ol--nested wallet__ol--nested">
+                        <li class="rates__li wallet__li">"Наименование" (карты) - произвольным текстом</li>
+                        <li class="rates__li wallet__li">"Номер карты" - вставить номер карты, который был скопирован ранее.</li>
+                    </ol>
+                </li>
+                <li class="rates__li">Нажмите на кнопку "Далее"</li>
+                <li class="rates__li">Заполните "Срок действия", "CVV" и нажмите на кнопку "Далее" </li>
+                <li class="rates__li">На экране "Условия и положения" нажмите "Принять"</li>
+                <li class="rates__li">На экране "Проверка карты" нажмите "Далее"</li>
+                <li class="rates__li">Введите код проверки, который пришел вам по СМС</li>
+                <li class="rates__li">Готово! Ваша карта активирована, добавлена в Wallet и готова для работы с Apple Pay</li>
+            </ol>
+        </div>
+
+        <div id="google" class="wallet-content-2 wallet-content">
+            <span class="wallet-subtitle">Как добавить карту в Google Pay?</span>
+            <ol class="rates__ol wallet__ol">
+                <li class="rates__li">Откройте приложение Google Pay
+                    <ul class="wallet__ul">
+                        <li>Если у вас несколько аккаунтов Google, нажмите на значок меню
+                            <img src="https://lh3.googleusercontent.com/yWH6GArdHg5_xQ23JKDXZtay2AIWD4iPwxkyRxQ6mUWeCkwqhKaw9RWBkc7qCN-kDGA=w18-h18" alt="menu"> 
+                            в левом верхнем углу, затем – на стрелку вниз 
+                            <img src="https://lh3.googleusercontent.com/6-67TpJfwK00vV-Q3EpLXW8Wipxt36apCTQMYxXBiqPIClmswUra_MwvkhMh2B5sPTY=w18-h18" alt="down arrow"> 
+                            и затем выберите нужный аккаунт.</li>
+                    </ul>
+                </li>
+                <li class="rates__li">Внизу нажмите <span class="bold">Оплата</span>.</li>
+                <li class="rates__li">Нажмите "Добавить" 
+                    <img src="https://lh3.googleusercontent.com/BNMRsBNDMV1-WQBcmt_3H_qbfgBNf1rx91_40DuAKxIAhisSHvd7aIErEirTULO6ttA=w18-h18" alt="add"> 
+                    и затем <span class="bold">Добавить банковскую карту</span>.</li>
+                <li class="rates__li">Сфотографируйте карту или введите ее данные вручную.</li>
+                <li class="rates__li">Если вам будет предложено подтвердить способ оплаты, выберите способ подтверждения из списка.</li>
+                <li class="rates__li">Введите код подтверждения.</li>
+            </ol>
+
+            <p>Когда вы добавите карту, в аккаунте может появиться запись о временном списании на небольшую сумму. Это значит, что мы проверяем вашу карту и аккаунт. На ваш баланс списание не повлияет и вскоре исчезнет.</p>
+        </div>
 
         <div class="button-wrapper">
             <a href="https://wa.me/14155238886" class="button-primary">Назад</a>
         </div>
     </div>
 </section>
+
+<script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+<script src="scripts/wallet-tabs.js" type="text/javascript"></script>
 </body>
 </html>

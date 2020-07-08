@@ -767,7 +767,7 @@ a:focus {
     max-width: 28rem; }
 .main.card-transfer .card-transfer-balance {
   text-align: center;
-  margin-bottom: 3.5rem; }
+  margin-bottom: 3rem; }
 .main.card-transfer .card-transfer-form-wrapper {
   padding-top: 1.5rem; }
   .main.card-transfer .card-transfer-form-wrapper .column-left {
@@ -790,7 +790,7 @@ a:focus {
       -ms-flex-direction: column;
           flex-direction: column; }
 .card-props-image {
-  width: 20rem;
+  width: 32rem;
   max-width: 100%; }
 .card-props-margin {
   margin-bottom: 1.5rem; }
@@ -827,7 +827,7 @@ a:focus {
     text-align: center; }
 
 .wallet-title {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-align: center; }
 .wallet-subtitle {
@@ -852,3 +852,53 @@ a:focus {
   width: 7rem; }
 .wallet-align-right {
   text-align: right; }
+.wallet-tabs {
+  width: 100%;
+  max-width: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.wallet-tab {
+  position: relative;
+  z-index: 2;
+  width: 48%;
+  padding: 0.5rem 1rem;
+  margin-bottom: -0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: 0.1rem solid #709bea;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  background: #e2e8f5;
+  cursor: pointer; }
+  .wallet-tab.active {
+    border-bottom: 0.1rem solid #fff;
+    background: #fff; }
+.wallet-content {
+  min-height: 54rem;
+  padding: 1.5rem;
+  border: 0.1rem solid #709bea; }
+  .wallet-content-2 {
+    display: none; }
+.wallet-border {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #c1c1c1; }
+.wallet__ul {
+  padding-left: 3.5rem;
+  list-style-type: disc;
+  list-style-position: outside; }
+.wallet__ol {
+  padding-bottom: 2rem;
+  list-style-position: outside; }

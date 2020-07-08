@@ -1,6 +1,6 @@
 .wallet {
   &-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
   }
@@ -24,5 +24,53 @@
   }
   &-align-right {
     text-align: right;
+  }
+  &-tabs {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-tab {
+    position: relative;
+    z-index: 2;
+    width: 48%;
+    padding: 0.5rem 1rem;
+    margin-bottom: -0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 0.1rem solid #709bea;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    background: #e2e8f5;
+    cursor: pointer;
+    &.active {
+      border-bottom: 0.1rem solid #fff;
+      background: #fff;
+    }
+  }
+  &-content {
+    min-height: 54rem;
+    padding: 1.5rem;
+    border: 0.1rem solid #709bea;
+    &-2 {
+      display: none;
+    }
+  }
+  &-border {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid #c1c1c1;
+  }
+  &__ul {
+    padding-left: 3.5rem;
+    list-style-type: disc;
+    list-style-position: outside;
+  }
+  &__ol {
+    padding-bottom: 2rem;
+    list-style-position: outside;
   }
 }
