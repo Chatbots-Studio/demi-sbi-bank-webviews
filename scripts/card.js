@@ -1,5 +1,5 @@
 var balance = 5000;
-$('#balance').text(balance + ' р.');
+$('#balance').html(balance + ' &#8381;');
 $('#do-transfer').click(function() {
     var sum;
     if($('#transfer-sum').val()) {
@@ -7,9 +7,9 @@ $('#do-transfer').click(function() {
     } else {
         sum = 1000;
     }
-    $('#new-balance').text(+balance+sum);
-    $('#cashback').text(sum*0.05);
-    $('#sum').text(sum);
+    $('#new-balance').html(+balance+sum + ' &#8381;');
+    $('#cashback').html(sum*0.05 + ' &#8381;');
+    $('#sum').html(sum + ' &#8381;');
     $('#params').css("display", "none");
     $('#transfer-rasult').css("display", "block");
 })
