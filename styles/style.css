@@ -545,14 +545,6 @@ a:focus {
     width: 100%;
     max-width: 20rem;
     padding: 0 1rem; }
-    .main .input-field::-webkit-input-placeholder {
-      color: #363636; }
-    .main .input-field:-ms-input-placeholder {
-      color: #363636; }
-    .main .input-field::-ms-input-placeholder {
-      color: #363636; }
-    .main .input-field::placeholder {
-      color: #363636; }
   .main .input-radio {
     margin-top: 0.5rem; }
   .main .select-item {
@@ -902,3 +894,7 @@ a:focus {
 .wallet__ol {
   padding-bottom: 2rem;
   list-style-position: outside; }
+
+.datepicker__wrapper {
+  padding-top: 4rem;
+  text-align: center; }

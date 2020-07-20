@@ -71,9 +71,9 @@
       width: 100%;
       max-width: 20rem;
       padding: 0 1rem;
-      &::placeholder {
-        color: #363636;
-      }
+      // &::placeholder {
+      //   color: #363636;
+      // }
     }
     &-radio {
       margin-top: 0.5rem;
@@ -316,3 +316,4 @@
 @import "card-transfer";
 @import "card-props";
 @import "wallet";
+@import "datepicker";
