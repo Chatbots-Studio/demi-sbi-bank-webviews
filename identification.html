@@ -41,8 +41,8 @@
 
         <div class="input-wrapper identification-margin">
             <select class="select-item" name="document" id="document">
-                <option value disabled>тип документа</option>
-                <option value="doc2" selected>паспорт</option>
+                <option value disabled selected>тип документа</option>
+                <option value="doc2">паспорт</option>
                 <option value="doc3">документ 2</option>
                 <option value="doc4">документ 3</option>
             </select>
@@ -70,8 +70,8 @@
             <div class="column-right">
                 <div class="input-wrapper">
                     <select class="select-item" name="document" id="document">
-                        <option value disabled>тип документа</option>
-                        <option value="doc2" selected>паспорт</option>
+                        <option value disabled selected>тип документа</option>
+                        <option value="doc2">паспорт</option>
                         <option value="doc2">документ 1</option>
                         <option value="doc3">документ 2</option>
                         <option value="doc4">документ 3</option>
@@ -110,9 +110,9 @@
                 <div class="input-wrapper">
                     <select class="select-item" name="document" id="document">
                         <option value disabled selected>СНИЛС/ИНН/ОМС</option>
-                        <option value="doc2">документ 1</option>
-                        <option value="doc3">документ 2</option>
-                        <option value="doc4">документ 3</option>
+                        <option value="doc2">СНИЛС</option>
+                        <option value="doc3">ИНН</option>
+                        <option value="doc4">ОМС</option>
                     </select>
                 </div>
             </div>
@@ -124,7 +124,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text" placeholder="СА">
+                    <input data-inputmask="'mask': '99-9999999'" class="input-field" type="text" placeholder="СА">
                 </div>
             </div>
         </div>
@@ -142,6 +142,7 @@
 <script type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.3/jquery.inputmask.min.js"></script>
 <script src="scripts/tabs.js" type="text/javascript"></script>
 </body>
 </html>

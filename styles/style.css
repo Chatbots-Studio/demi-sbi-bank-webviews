@@ -545,6 +545,14 @@ a:focus {
     width: 100%;
     max-width: 20rem;
     padding: 0 1rem; }
+    .main .input-field::-webkit-input-placeholder {
+      color: #cccccc; }
+    .main .input-field:-ms-input-placeholder {
+      color: #cccccc; }
+    .main .input-field::-ms-input-placeholder {
+      color: #cccccc; }
+    .main .input-field::placeholder {
+      color: #cccccc; }
   .main .input-radio {
     margin-top: 0.5rem; }
   .main .select-item {
@@ -736,6 +744,8 @@ a:focus {
     width: 100%;
     max-width: 20rem;
     margin: 0; }
+    .identification .select-item option:disabled {
+      color: #cccccc; }
 
 @media screen and (max-width: 576px) {
   .main .label {

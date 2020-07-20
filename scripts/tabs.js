@@ -23,3 +23,6 @@ $('#button-send').click(function() {
         $(location).attr('href', url+'n');
     }
 })
+
+// ----Input mask----
+$(":input").inputmask();

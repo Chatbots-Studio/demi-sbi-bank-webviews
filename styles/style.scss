@@ -71,9 +71,9 @@
       width: 100%;
       max-width: 20rem;
       padding: 0 1rem;
-      // &::placeholder {
-      //   color: #363636;
-      // }
+      &::placeholder {
+        color: #cccccc;
+      }
     }
     &-radio {
       margin-top: 0.5rem;
@@ -286,6 +286,11 @@
     width: 100%;
     max-width: 20rem;
     margin: 0;
+    option {
+      &:disabled{
+        color: #cccccc;
+      }
+    }
   }
 }
 
