@@ -898,3 +898,11 @@ a:focus {
 .datepicker__wrapper {
   padding-top: 4rem;
   text-align: center; }
+.datepicker .datepicker__button {
+  width: 12rem;
+  margin-bottom: 2rem; }
+.datepicker .datepicker__error {
+  position: static;
+  padding-top: 2rem; }
+.datepicker .flatpickr-calendar {
+  margin: auto; }

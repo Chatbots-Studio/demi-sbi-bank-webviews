@@ -3,4 +3,15 @@
         padding-top: 4rem;
         text-align: center;
     }
+    .datepicker__button {
+        width: 12rem;
+        margin-bottom: 2rem;
+    }
+    .datepicker__error {
+        position: static;
+        padding-top: 2rem;
+    }
+    .flatpickr-calendar {
+        margin: auto;
+    }
 }
