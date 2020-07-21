@@ -31,7 +31,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field text-mask form-control" type="text" required placeholder="Иванов">
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field text-mask form-control" type="text" required placeholder="Иван">
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field text-mask form-control" type="text" required placeholder="Иванович">
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field tel-mask form-control" type="text" placeholder="+71234567890" required>
                 </div>
             </div>
         </div>
@@ -71,12 +71,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id="passport" class="input-radio" type="radio" name="doc">
-                    <label class="label" for="passport">Паспорт РФ</label>
-                </div>
-                <div class="input-wrapper">
-                    <input id="sertify" class="input-radio" type="radio" name="doc">
-                    <label class="label" for="sertify">Свидетельство о рождении</label>
+                    <span for="sertify">Свидетельство о рождении</span>
                 </div>
             </div>
         </div>
@@ -87,7 +82,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input id='doc-series' class="input-field form-control" type="text" required placeholder= "III-AM">
                 </div>
             </div>
             <div class="column-left">
@@ -95,19 +90,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
-                </div>
-            </div>
-        </div>
-        <div class="form-item">
-            <div class="column-left">
-                <span>Дата рождения</span>
-            </div>
-            <div class="column-right">
-                <div class="input-wrapper">
-                    <select class="select-item" name="date" id="date"></select>
-                    <select class="select-item" name="month" id="month"></select>
-                    <select class="select-item" name="year" id="year"></select>
+                    <input id='doc-number' class="input-field form-control" type="text" required placeholder= "123456">
                 </div>
             </div>
         </div>
@@ -120,7 +103,11 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field form-control"
+                        placeholder= 'Россия' 
+                        data-inputmask="'mask': 'a{1,20}[-][a{1,20}]', 
+                                        'casing': 'title'" 
+                        type="text" required>
                 </div>
             </div>
             <div class="column-left">
@@ -128,21 +115,28 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field form-control" 
+                        placeholder= 'Москва'
+                        data-inputmask="'mask': 'a{1,20}[-][a{1,20}]', 
+                                        'casing': 'title'" 
+                        type="text" required>
                 </div>
             </div>
         </div>
 
+        <div class="error-message">Для продолжения необходимо корректно заполнить все поля</div>
+
         <div class="button-wrapper">
-            <a href="https://m.me/103229161431509?ref=4" class="button-primary">Готово</a>
+            <button id="ok-button" class="button-primary">Готово</button>
         </div>
 
     </div>
 </section>
     
 <script type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.3/jquery.inputmask.min.js"></script>
 <script src="scripts/forms.js" type="text/javascript"></script>
 </body>
 </html>

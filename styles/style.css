@@ -555,6 +555,14 @@ a:focus {
       color: #cccccc; }
   .main .input-radio {
     margin-top: 0.5rem; }
+  .main .input-error {
+    border-color: red; }
+  .main .error-message {
+    padding: 1.5rem;
+    display: none;
+    text-align: center;
+    font-size: 1.4rem;
+    color: red; }
   .main .select-item {
     height: 3rem;
     max-height: 6.5rem;

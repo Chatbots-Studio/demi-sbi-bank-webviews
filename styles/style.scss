@@ -78,6 +78,16 @@
     &-radio {
       margin-top: 0.5rem;
     }
+    &-error {
+      border-color: red;
+    }
+  }
+  .error-message {
+    padding: 1.5rem;
+    display: none;
+    text-align: center;
+    font-size: 1.4rem;
+    color: red;
   }
   .select-item {
     height: 3rem;

@@ -35,8 +35,8 @@ fillSelect(selectMontn, month);
 fillSelect(selectYear, year);
 fillSelect(selectBirthYear, childBirthYear);
 
-setDate('#birth-sertify-filled', '22', 'апрель', '1977');
-setDate('#manual-filled', '22', 'апрель', '1977');
+// setDate('#birth-sertify-filled', '22', 'апрель', '1977');
+// setDate('#manual-filled', '22', 'апрель', '1977');
 
 function checkDate() {
     var enteredDateMax = new Date(+selectBirthYear.val()+6, month.indexOf(selectMontn.val()), selectDate.val()),
@@ -62,4 +62,40 @@ $('#save-button').click(function(){
         $(location).attr('href',url);
     }
 });
+$(document).ready(function(){
+    $(":input").inputmask();
+    $('.text-mask').inputmask({
+        mask: "a{1,20}[-][a{1,20}][-][a{1,20}]",
+        greedy: false,
+        casing: 'title',
+        });
+    $('.tel-mask').inputmask({
+        mask: "+79999999999"
+    });
+    $('#doc-series').inputmask({
+        mask: "AAA-AA"
+    });
+    $('#passport-series').inputmask({
+        mask: "9999"
+    });
+    $('#doc-number').inputmask({
+        mask: "999999"
+    });
+});
+$('#ok-button').click(function() {
+    $(".form-control").removeClass('input-error');
+    $('.error-message').hide();
+    var incompleteInputs = $(".form-control").filter (function () {
+        return !$(this).inputmask("isComplete") 
+    });
+    if (incompleteInputs.length > 0 || !$('input[name="sex"]:checked').val()) {
+        $('.error-message').show();
+        incompleteInputs.each(function(){
+            $(this).addClass('input-error');
+        })
+    } else {
+        var url = "https://m.me/103229161431509?ref=4";
+        $(location).attr('href',url);
+    } 
+})
 

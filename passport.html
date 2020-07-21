@@ -16,7 +16,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id="male" class="input-radio" type="radio" name="sex" checked>
+                    <input id="male" class="input-radio" type="radio" name="sex">
                     <label class="label" for="male">Мужской</label>
                 </div>
                 <div class="input-wrapper">
@@ -31,7 +31,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field text-mask form-control" type="text" required value='Андреев'>
+                    <input class="input-field text-mask form-control" type="text" required placeholder="Иванов">
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field text-mask form-control" type="text" required value='Андрей'>
+                    <input class="input-field text-mask form-control" type="text" required placeholder="Иван">
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field text-mask form-control" type="text" required value='Андреевич'>
+                    <input class="input-field text-mask form-control" type="text" required placeholder="Иванович">
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field tel-mask form-control" type="text" required value='+74957556983'>
+                    <input class="input-field tel-mask form-control" type="text" placeholder="+71234567890" required>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <span for="sertify">Свидетельство о рождении</span>
+                    <span for="sertify">Паспорт РФ</span>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id='doc-series' class="input-field form-control" type="text" value="III-AM" required>
+                    <input id='passport-series' class="input-field form-control" type="text" required placeholder= "1234">
                 </div>
             </div>
             <div class="column-left">
@@ -90,7 +90,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id='doc-number' class="input-field form-control" type="text" required value='234567'>
+                    <input id='doc-number' class="input-field form-control" type="text" required placeholder= "567890">
                 </div>
             </div>
         </div>
@@ -103,7 +103,11 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field form-control" data-inputmask="'mask': 'a{1,20}[-][a{1,20}]', 'casing': 'title'" type="text" required value='Россия'>
+                    <input class="input-field form-control"
+                        placeholder= 'Россия' 
+                        data-inputmask="'mask': 'a{1,20}[-][a{1,20}]', 
+                                        'casing': 'title'" 
+                        type="text" required>
                 </div>
             </div>
             <div class="column-left">
@@ -111,15 +115,19 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field form-control" data-inputmask="'mask': 'a{1,20}[-][a{1,20}]', 'casing': 'title'" type="text" required value='Москва' readonly>
+                    <input class="input-field form-control" 
+                        placeholder= 'Москва'
+                        data-inputmask="'mask': 'a{1,20}[-][a{1,20}]', 
+                                        'casing': 'title'" 
+                        type="text" required>
                 </div>
             </div>
         </div>
 
+        <div class="error-message">Для продолжения необходимо корректно заполнить все поля</div>
+
         <div class="button-wrapper">
-            <a href="https://m.me/103229161431509?ref=11datacorrect" class="button-primary birth-sertify__button">Данные верны</a>
-            
-            <a href="https://m.me/103229161431509?ref=12datainccorect" class="button-primary birth-sertify__button">Данные не верны</a>
+            <button id="ok-button" class="button-primary">Готово</button>
         </div>
 
     </div>
@@ -130,6 +138,5 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.3/jquery.inputmask.min.js"></script>
 <script src="scripts/forms.js" type="text/javascript"></script>
-
 </body>
 </html>
