@@ -97,5 +97,15 @@ $('#ok-button').click(function() {
         var url = "https://m.me/103229161431509?ref=4";
         $(location).attr('href',url);
     } 
+});
+$(document).ready(function(){
+    if(window.location.search){
+        var ref = '?ref=',
+        str = window.location.search,
+        date = str.replace(ref, '');
+        $('#get-birth-date').text(date);
+    }else {
+        $('#get-birth-date').text('Нет данных');
+    }
 })
 

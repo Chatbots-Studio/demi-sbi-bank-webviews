@@ -16,11 +16,11 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id="male" class="input-radio" type="radio" name="sex" checked>
+                    <input id="male" class="input-radio" type="radio" name="sex" checked >
                     <label class="label" for="male">Мужской</label>
                 </div>
                 <div class="input-wrapper">
-                    <input id="female" class="input-radio" type="radio" name="sex">
+                    <input id="female" class="input-radio" type="radio" name="sex" disabled>
                     <label class="label" for="female">Женский</label>
                 </div>
             </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field text-mask form-control" type="text" required value='Андреев'>
+                    <input class="input-field text-mask form-control" type="text" required value='Андреев' readonly>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field text-mask form-control" type="text" required value='Андрей'>
+                    <input class="input-field text-mask form-control" type="text" required value='Андрей' readonly>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field text-mask form-control" type="text" required value='Андреевич'>
+                    <input class="input-field text-mask form-control" type="text" required value='Андреевич' readonly>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field tel-mask form-control" type="text" required value='+74957556983'>
+                    <input class="input-field tel-mask form-control" type="text" required value='+74957556983' readonly>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <span for="sertify">Свидетельство о рождении</span>
+                    <span>Свидетельство о рождении</span>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id='doc-series' class="input-field form-control" type="text" value="III-AM" required>
+                    <input id='doc-series' class="input-field form-control" type="text" value="III-AM" required readonly>
                 </div>
             </div>
             <div class="column-left">
@@ -90,10 +90,22 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id='doc-number' class="input-field form-control" type="text" required value='234567'>
+                    <input id='doc-number' class="input-field form-control" type="text" required value='234567' readonly>
                 </div>
             </div>
         </div>
+
+        <div class="form-item">
+            <div class="column-left">
+                <span>Дата рождения</span>
+            </div>
+            <div class="column-right">
+                <div class="input-wrapper">
+                    <span id="get-birth-date"></span>
+                </div>
+            </div>
+        </div>
+
         <div class="form-item">
             <div class="form-item__name">
                 <span class="bold">Место рождения</span>
@@ -103,7 +115,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field form-control" data-inputmask="'mask': 'a{1,20}[-][a{1,20}]', 'casing': 'title'" type="text" required value='Россия'>
+                    <input class="input-field form-control" readonly data-inputmask="'mask': 'a{1,20}[-][a{1,20}]', 'casing': 'title'" type="text" required value='Россия'>
                 </div>
             </div>
             <div class="column-left">
