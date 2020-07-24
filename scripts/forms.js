@@ -81,6 +81,14 @@ $(document).ready(function(){
     $('#doc-number').inputmask({
         mask: "999999"
     });
+    $('#series').inputmask({
+        mask: "9999",
+        placeholder: "1234"
+    });
+    $('#number').inputmask({
+        mask: "999999",
+        placeholder: "123456"
+    });
 });
 $('#ok-button').click(function() {
     $(".form-control").removeClass('input-error');
@@ -107,5 +115,68 @@ $(document).ready(function(){
     }else {
         $('#get-birth-date').text('Нет данных');
     }
-})
+});
+$('input[name="doc"]').change(function () {
+    console.log($('input[name="doc"]:checked').val());
+    if($('input[name="doc"]:checked').val() === "d1") {
+        $('#series').inputmask({
+            mask: "9999",
+            placeholder: "1234"
+        });
+        $('#number').inputmask({
+            mask: "999999",
+            placeholder: "123456"
+        });
+    }else if($('input[name="doc"]:checked').val() === "d2") {
+        $('#series').inputmask({
+            mask: "*",
+            placeholder: "1"
+        });
+        $('#number').inputmask({
+            mask: "*",
+            placeholder: "1"
+        });
+    }else if($('input[name="doc"]:checked').val() === "d3") {
+        $('#series').inputmask({
+            mask: "AA",
+            placeholder: "AC"
+        });
+        $('#number').inputmask({
+            mask: "9{7}",
+            placeholder: "5678905"
+        });
+    }
+});
+$('#manual-send-btn').click(function() {
+    $(".form-control").removeClass('input-error');
+    $('.error-message').hide();
+    var incompleteInputs = $(".form-control").filter (function () {
+        return !$(this).inputmask("isComplete") 
+    });
+    if (incompleteInputs.length > 0 || !$('input[name="sex"]:checked').val()) {
+        $('.error-message').show();
+        incompleteInputs.each(function(){
+            $(this).addClass('input-error');
+        })
+    } else {
+        var url = "https://m.me/103229161431509?ref=7";
+        $(location).attr('href',url);
+    } 
+});
+$('#index-button').click(function() {
+    $(".form-control").removeClass('input-error');
+    $('.error-message').hide();
+    var incompleteInputs = $(".form-control").filter (function () {
+        return !$(this).inputmask("isComplete") 
+    });
+    if (incompleteInputs.length > 0 || !$('input[name="sex"]:checked').val()) {
+        $('.error-message').show();
+        incompleteInputs.each(function(){
+            $(this).addClass('input-error');
+        })
+    } else {
+        var url = "https://m.me/103229161431509?ref=3";
+        $(location).attr('href',url);
+    } 
+});
 

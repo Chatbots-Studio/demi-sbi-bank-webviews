@@ -26,4 +26,13 @@ $('#save-button').click(function() {
     } else {
         $(location).attr('href', url);
     }
+});
+$('#details').click(function (e) {
+    e.preventDefault();
+    $('#flow').hide();
+    $('.more-details').show();
+});
+$('#back-btn').click(function () {
+    $('.more-details').hide();
+    $('#flow').css('display', 'flex');
 })

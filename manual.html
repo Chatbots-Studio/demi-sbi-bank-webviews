@@ -31,7 +31,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field text-mask form-control" type="text">
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field text-mask form-control" type="text">
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input class="input-field text-mask form-control" type="text">
                 </div>
             </div>
         </div>
@@ -61,15 +61,15 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input id="passport" class="input-radio" type="radio" name="doc">
+                    <input id="passport" class="input-radio" type="radio" name="doc" value="d1" checked>
                     <label class="label" for="passport">Паспорт РФ</label>
                 </div>
                 <div class="input-wrapper">
-                    <input id="military" class="input-radio" type="radio" name="doc">
+                    <input id="military" class="input-radio" type="radio" name="doc" value="d2">
                     <label class="label" for="military">УЛ в/с РФ</label>
                 </div>
                 <div class="input-wrapper">
-                    <input id="military-ticket" class="input-radio" type="radio" name="doc">
+                    <input id="military-ticket" class="input-radio" type="radio" name="doc" value="d3">
                     <label class="label" for="military-ticket">Военный билет</label>
                 </div>
             </div>
@@ -81,7 +81,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input id='series' class="input-field form-control" type="text">
                 </div>
             </div>
             <div class="column-left">
@@ -89,7 +89,7 @@
             </div>
             <div class="column-right">
                 <div class="input-wrapper">
-                    <input class="input-field" type="text">
+                    <input id='number' class="input-field form-control" type="text">
                 </div>
             </div>
         </div>
@@ -106,8 +106,10 @@
             </div>
         </div>
 
+        <div class="error-message">Для продолжения необходимо корректно заполнить все поля</div>
+
         <div class="button-wrapper">
-            <a href="https://m.me/103229161431509?ref=7" class="button-secondary">Отправить</a>
+            <button id="manual-send-btn" href="https://m.me/103229161431509?ref=7" class="button-secondary">Отправить</button>
         </div>
 
     </div>
@@ -116,6 +118,7 @@
 <script type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.3/jquery.inputmask.min.js"></script>
 <script src="scripts/forms.js" type="text/javascript"></script>
 </body>
 </html>
