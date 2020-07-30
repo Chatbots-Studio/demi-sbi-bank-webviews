@@ -615,6 +615,8 @@ a:focus {
     width: 100%;
     padding: 2rem 1rem;
     margin-bottom: 2rem; }
+  .main .download-file {
+    text-align: center; }
   .main .download-form-wrapper {
     width: 100%;
     max-width: 50rem;
@@ -758,6 +760,8 @@ a:focus {
 @media screen and (max-width: 576px) {
   .main .label {
     max-width: 13rem; }
+  .main .flow-label {
+    max-width: 90%; }
   .main.identification .label {
     max-width: 20rem; } }
 @media screen and (max-width: 350px) {

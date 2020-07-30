@@ -148,6 +148,9 @@
     }
   }
   .download {
+    &-file {
+      text-align: center;
+    }
     &-form-wrapper {
       width: 100%;
       max-width: 50rem;
@@ -308,6 +311,9 @@
   .main {
     .label {
       max-width: 13rem;
+    }
+    .flow-label {
+      max-width: 90%;
     }
     &.identification {
       .label {

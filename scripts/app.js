@@ -13,6 +13,7 @@ fileUploadSelfy.change(function() {
     }
 });
 $('#save-button').click(function() {
+    $('#flow-error').hide();
     var checkedVal = $("input[name='data-check']:checked").val(),
         url;
     if ($('#save-button').hasClass('save-button-1')) {
@@ -24,7 +25,7 @@ $('#save-button').click(function() {
         var newUrl =  url + checkedVal;
         $(location).attr('href', newUrl);
     } else {
-        $(location).attr('href', url);
+        $('#flow-error').show();
     }
 });
 $('#details').click(function (e) {

@@ -29,12 +29,14 @@
 
                 <div class="input-wrapper">
                     <input id="agree" class="input-radio" type="radio" name="data-check" value='y'>
-                    <label class="label" for="agree">согласен на проверку данных через ЕПГУ <a id="details" href="javascript: void(0)">детально</a></label>
+                    <label class="label flow-label" for="agree">согласен на проверку данных через ЕПГУ <a id="details" href="javascript: void(0)">детально</a></label>
                 </div>
                 <div class="input-wrapper">
                     <input id="disagree" class="input-radio" type="radio" name="data-check" value='n'>
-                    <label class="label" for="disagree">не согласен на проверку данных через ЕПГУ</label>
+                    <label class="label flow-label" for="disagree">не согласен на проверку данных через ЕПГУ</label>
                 </div>
+
+                <div id='flow-error' class="error-message">Для продолжения необходимо выбрать один из вышеуказанных пунктов</div>
 
                 <div class="button-wrapper">
                     <button id="save-button" class="button-primary save-button-2">Сохранить</button>
