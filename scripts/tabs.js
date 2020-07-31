@@ -43,58 +43,48 @@ $('#send-btn').click(function() {
 
 // ----Input mask----
 $(document).ready(function(){
-    $('#doc1-series').inputmask({
-        mask: "9999",
-        placeholder: "1234"
-    });
-    $('#doc1-number').inputmask({
-        mask: "999999",
-        placeholder: "123456"
-    });
-    $('#doc2-number').inputmask({
-        mask: "9{11}",
-        placeholder: "12345678900"
-    });
+    $('#doc1-s-passport').inputmask({mask: '9999'});
+    $('#doc1-n-passport').inputmask({mask: '999999'});
+    $('.doc2-snils').inputmask({mask: '9{11}'});
 });
+
+function createInput (parentEl, placeholder, inputMask) {
+    $(parentEl).append(
+        $('<input>', {
+            "class": 'input-field form-control',
+            'type': "text",
+            'placeholder': placeholder,
+        }).inputmask({mask: inputMask})
+    );
+};
+
 $('#doc-type1').change(function () {
+    $('#series1 input, #number1 input').remove();
     if($('#doc-type1').val() === "passport") {
-        $('#doc1-series').inputmask({
-            mask: "9999",
-            placeholder: "1234"
-        });
-        $('#doc1-number').inputmask({
-            mask: "999999",
-            placeholder: "123456"
-        });
+        createInput ('#series1', '1234', '9999');
+        createInput ('#number1', '123456', '999999');
     }else if($('#doc-type1').val() === "doc2") {
-        $('#doc1-series').inputmask({
-            mask: "9",
-            placeholder: "1"
-        });
-        $('#doc1-number').inputmask({
-            mask: "9",
-            placeholder: "1"
-        });
+        createInput ('#series1', '2', '9');
+        createInput ('#number1', '2', '9');
+    }else if($('#doc-type1').val() === "doc3") {
+        createInput ('#series1', '3', '9');
+        createInput ('#number1', '3', '9');
+    }else if($('#doc-type1').val() === "doc4") {
+        createInput ('#series1', '4', '9');
+        createInput ('#number1', '4', '9');
     }
 });
 $('#doc-type2').change(function () {
+    $('#number2 input').remove();
     if($('#doc-type2').val() === "snils") {
-        $('#doc2-number').inputmask({
-            mask: "9{11}",
-            placeholder: "12345678900"
-        });
+        createInput ('#number2', '12345678900', '9{11}');
     }else if($('#doc-type2').val() === "inn") {
-        $('#doc2-number').inputmask({
-            mask: "(9{9,10})|(9{12})",
-            placeholder: "123456789001"
-        });
+        createInput ('#number2', '123456789001', '(9{9,10})|(9{12})');
     }else if($('#doc-type2').val() === "oms") {
-        $('#doc2-number').inputmask({
-            mask: "9{16}",
-            placeholder: "5678123456789001"
-        });
+        createInput ('#number2', '5678123456789001', '9{16}');
     }
-})
+});
+
 $(":input").inputmask();
 
 $('#details').click(function (e) {
